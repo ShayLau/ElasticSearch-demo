@@ -1,5 +1,6 @@
 package com.elasticsearch.demo.service.base.impl;
 
+import com.elasticsearch.demo.mapper.BookMapper;
 import com.elasticsearch.demo.model.Book;
 import com.elasticsearch.demo.model.indexmapping.BookMapping;
 import com.elasticsearch.demo.service.base.EsBaseService;
@@ -19,7 +20,7 @@ import java.util.List;
  */
 @Service
 @Slf4j
-public class EsScrollServiceImpl extends EsBaseService<BookMapping, Book> implements EsScrollService {
+public class EsScrollServiceImpl extends EsBaseService<BookMapper, Book> implements EsScrollService {
 
 
     @Override
